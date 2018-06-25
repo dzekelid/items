@@ -6,10 +6,10 @@ description: Square helps millions of sellers run their business- from secure cr
   up today!
 image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
 x-kinRank: "9"
-x-alexaRank: "2436"
+x-alexaRank: "2433"
 tags: Items
-created: "2018-06-20"
-modified: "2018-06-20"
+created: "2018-06-25"
+modified: "2018-06-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
@@ -17,7 +17,7 @@ apis:
   x-api-slug: square-connect-api
   description: Provides summary information for all of a location's items.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/items
   tags: Provides,Summary,Information,Of,Locations,Items
   properties:
@@ -29,13 +29,15 @@ apis:
     card processing to point of sale solutions. Get paid faster with Square and sign
     up today!
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Items
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/square/openapi.md
 x-common:
+- type: x-website
+  url: http://square.com
 - type: x-base
   url: https://connect.squareup.com
 - type: x-crunchbase
@@ -64,6 +66,8 @@ x-common:
   url: takedowns@squareup.com
 - type: x-github
   url: https://github.com/square
+- type: x-linkedin
+  url: https://www.linkedin.com/company/square--/
 - type: x-twitter
   url: https://twitter.com/Square
 - type: x-website
