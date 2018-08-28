@@ -7,107 +7,146 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instru
 x-kinRank: "8"
 x-alexaRank: "367"
 tags: Items
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Instructure Canvas Courses API List module items
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - List module items
+  x-api-slug: coursescourse-idmodulesmodule-iditems-get
   description: List module items.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/modules/module_id/items
-  tags: Courses,Course,Id,Modules,Module,Id,Items
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditems-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditems-get-openapi.md
-- name: Instructure Canvas Courses API Create a module item
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Create a module item
+  x-api-slug: coursescourse-idmodulesmodule-iditems-post
   description: Create a module item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/modules/module_id/items
-  tags: Courses,Course,Id,Modules,Module,Id,Items
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditems-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditems-post-openapi.md
-- name: Instructure Canvas Courses API Delete module item
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Delete module item
+  x-api-slug: coursescourse-idmodulesmodule-iditemsid-delete
   description: Delete module item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/modules/module_id/items/{id}
-  tags: Courses,Course,Id,Modules,Module,Id,Items,Id
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsid-delete-openapi.md
-- name: Instructure Canvas Courses API Show module item
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Show module item
+  x-api-slug: coursescourse-idmodulesmodule-iditemsid-get
   description: Show module item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/modules/module_id/items/{id}
-  tags: Courses,Course,Id,Modules,Module,Id,Items,Id
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsid-get-openapi.md
-- name: Instructure Canvas Courses API Update a module item
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Update a module item
+  x-api-slug: coursescourse-idmodulesmodule-iditemsid-put
   description: Update a module item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/modules/module_id/items/{id}
-  tags: Courses,Course,Id,Modules,Module,Id,Items,Id
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsid-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsid-put-openapi.md
-- name: Instructure Canvas Courses API Mark module item as done/not done
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Mark module item as done/not done
+  x-api-slug: coursescourse-idmodulesmodule-iditemsiddone-put
   description: Mark module item as done/not done.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/modules/module_id/items/{id}/done
-  tags: Courses,Course,Id,Modules,Module,Id,Items,Id,Done
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsiddone-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsiddone-put-openapi.md
-- name: Instructure Canvas Courses API Mark module item read
-  x-api-slug: instructure-canvas-courses-api
+- name: Instructure Canvas Courses API - Mark module item read
+  x-api-slug: coursescourse-idmodulesmodule-iditemsidmark-read-post
   description: Mark module item read.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
-  baseURL: https://canvas.instructure.com//api/v1//courses/{course_id}/modules/module_id/items/{id}/mark_read
-  tags: Courses,Course,Id,Modules,Module,Id,Items,Id,Mark,Read
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsidmark-read-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodulesmodule-iditemsidmark-read-post-openapi.md
-- name: Instructure Canvas Courses API
-  x-api-slug: instructure-canvas-courses-api
-  description: Instructure makes software that makes smarter people. Products include
-    Canvas LMS, Bridge and Canvas Network.
+- name: Instructure Canvas Courses API - Get module item sequence
+  x-api-slug: coursescourse-idmodule-item-sequence-get
+  description: Get module item sequence.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
   humanURL: http://instructure.com
   baseURL: https://canvas.instructure.com//api/v1
-  tags: Items
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodule-item-sequence-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodule-item-sequence-get-openapi.md
+- name: Instructure Canvas Courses API - Get module item sequence
+  x-api-slug: coursescourse-idmodule-item-sequence-get
+  description: Get module item sequence.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
+  humanURL: http://instructure.com
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodule-item-sequence-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodule-item-sequence-get-openapi.md
+- name: Instructure Canvas Courses API - Get module item sequence
+  x-api-slug: coursescourse-idmodule-item-sequence-get
+  description: Get module item sequence.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg
+  humanURL: http://instructure.com
+  baseURL: https://canvas.instructure.com//api/v1
+  tags: Education, LMS, Indie EdTech Data Jam, Stack Network, SaaS, Technology, Enterprise,
+    API Provider, Profiles, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodule-item-sequence-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/instructure/coursescourse-idmodule-item-sequence-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://instagram.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://instructure.stack.network
 - type: x-blog
   url: http://blog.instructure.com
 - type: x-blog-rss

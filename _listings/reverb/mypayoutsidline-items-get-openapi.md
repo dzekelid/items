@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Reverb
 x-complete: 0
 info:
-  title: reverb Get My Payouts Line Items
+  title: Reverb Get My Payouts Line Items
   description: Read the line items of a payout
   termsOfService: https://reverb.com/page/terms
   contact:

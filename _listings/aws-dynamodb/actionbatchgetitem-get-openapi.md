@@ -15,6 +15,229 @@ produces:
 consumes:
 - application/json
 paths:
+  /?Action=DeleteItem:
+    get:
+      summary: Delete Item
+      description: Deletes a single item in a table by primary key.
+      operationId: deleteItem
+      x-api-path-slug: actiondeleteitem-get
+      parameters:
+      - in: query
+        name: ConditionalOperator
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ConditionExpression
+        description: A condition that must be satisfied in order for a conditional
+          DeleteItem to      succeed
+        type: string
+      - in: query
+        name: Expected
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ExpressionAttributeNames
+        description: One or more substitution tokens for attribute names in an expression
+        type: string
+      - in: query
+        name: ExpressionAttributeValues
+        description: One or more values that can be substituted in an expression
+        type: string
+      - in: query
+        name: Key
+        description: A map of attribute names to AttributeValue objects, representing
+          the primary key of      the item to delete
+        type: string
+      - in: query
+        name: ReturnConsumedCapacity
+        description: 'Determines the level of detail about provisioned throughput
+          consumption that is returned in the response:'
+        type: string
+      - in: query
+        name: ReturnItemCollectionMetrics
+        description: Determines whether item collection metrics are returned
+        type: string
+      - in: query
+        name: ReturnValues
+        description: Use ReturnValues if you want to get the item attributes as they
+          appeared before they      were deleted
+        type: string
+      - in: query
+        name: TableName
+        description: The name of the table from which to delete the item
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Items
+  /?Action=GetItem:
+    get:
+      summary: Get Item
+      description: |-
+        The GetItem operation returns a set of attributes for the item with the given primary
+                  key.
+      operationId: getItem
+      x-api-path-slug: actiongetitem-get
+      parameters:
+      - in: query
+        name: AttributesToGet
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ConsistentRead
+        description: 'Determines the read consistency model:  If set to true, then
+          the operation uses strongly consistent reads; otherwise, the operation uses
+          eventually consistent reads'
+        type: string
+      - in: query
+        name: ExpressionAttributeNames
+        description: One or more substitution tokens for attribute names in an expression
+        type: string
+      - in: query
+        name: Key
+        description: A map of attribute names to AttributeValue objects, representing
+          the primary key of      the item to retrieve
+        type: string
+      - in: query
+        name: ProjectionExpression
+        description: A string that identifies one or more attributes to retrieve from
+          the table
+        type: string
+      - in: query
+        name: ReturnConsumedCapacity
+        description: 'Determines the level of detail about provisioned throughput
+          consumption that is returned in the response:'
+        type: string
+      - in: query
+        name: TableName
+        description: The name of the table containing the requested item
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Items
+  /?Action=PutItem:
+    get:
+      summary: Put Item
+      description: Creates a new item, or replaces an old item with a new item.
+      operationId: putItem
+      x-api-path-slug: actionputitem-get
+      parameters:
+      - in: query
+        name: ConditionalOperator
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ConditionExpression
+        description: A condition that must be satisfied in order for a conditional
+          PutItem operation to      succeed
+        type: string
+      - in: query
+        name: Expected
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ExpressionAttributeNames
+        description: One or more substitution tokens for attribute names in an expression
+        type: string
+      - in: query
+        name: ExpressionAttributeValues
+        description: One or more values that can be substituted in an expression
+        type: string
+      - in: query
+        name: Item
+        description: A map of attribute name/value pairs, one for each attribute
+        type: string
+      - in: query
+        name: ReturnConsumedCapacity
+        description: 'Determines the level of detail about provisioned throughput
+          consumption that is returned in the response:'
+        type: string
+      - in: query
+        name: ReturnItemCollectionMetrics
+        description: Determines whether item collection metrics are returned
+        type: string
+      - in: query
+        name: ReturnValues
+        description: Use ReturnValues if you want to get the item attributes as they
+          appeared before they      were updated with the PutItem request
+        type: string
+      - in: query
+        name: TableName
+        description: The name of the table to contain the item
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Items
+  /?Action=UpdateItem:
+    get:
+      summary: Update Item
+      description: Edits an existing item's attributes, or adds a new item to the
+        table if it does not already exist.
+      operationId: updateItem
+      x-api-path-slug: actionupdateitem-get
+      parameters:
+      - in: query
+        name: AttributeUpdates
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ConditionalOperator
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ConditionExpression
+        description: A condition that must be satisfied in order for a conditional
+          update to succeed
+        type: string
+      - in: query
+        name: Expected
+        description: This is a legacy parameter
+        type: string
+      - in: query
+        name: ExpressionAttributeNames
+        description: One or more substitution tokens for attribute names in an expression
+        type: string
+      - in: query
+        name: ExpressionAttributeValues
+        description: One or more values that can be substituted in an expression
+        type: string
+      - in: query
+        name: Key
+        description: The primary key of the item to be updated
+        type: string
+      - in: query
+        name: ReturnConsumedCapacity
+        description: 'Determines the level of detail about provisioned throughput
+          consumption that is returned in the response:'
+        type: string
+      - in: query
+        name: ReturnItemCollectionMetrics
+        description: Determines whether item collection metrics are returned
+        type: string
+      - in: query
+        name: ReturnValues
+        description: Use ReturnValues if you want to get the item attributes as they
+          appeared either before      or after they were updated
+        type: string
+      - in: query
+        name: TableName
+        description: The name of the table containing the item to update
+        type: string
+      - in: query
+        name: UpdateExpression
+        description: An expression that defines one or more attributes to be updated,
+          the action to be performed on them, and new value(s) for them
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Items
   /?Action=BatchGetItem:
     get:
       summary: Batch Get Item
@@ -35,48 +258,6 @@ paths:
           consumption that is returned in the response:'
         type: string
       responses:
-        1:
-          description: Photoset not found - The photoset id passed was not the id
-            of avalid photoset owned by the calling user
-        2:
-          description: Photo not found - The photo id passed was not the id of a valid
-            photo owned by the calling user
-        95:
-          description: SSL is required - SSL is required to access the Flickr API
-        96:
-          description: Invalid signature - The passed signature was invalid
-        97:
-          description: Missing signature - The call required signing but no signature
-            was sent
-        98:
-          description: Login failed / Invalid auth token - The login details or auth
-            token passed were invalid
-        99:
-          description: User not logged in / Insufficient permissions - The method
-            requires user authentication but the user was not logged in, or the authenticated
-            method call did not have the required permissions
-        100:
-          description: Invalid API Key - The API key passed was not valid or has expired
-        105:
-          description: Service currently unavailable - The requested service is temporarily
-            unavailable
-        106:
-          description: Write operation failed - The requested operation failed due
-            to a temporary issue
-        111:
-          description: Format "xxx" not found - The requested response format was
-            not found
-        112:
-          description: Method "xxx" not found - The requested method was not found
-        114:
-          description: Invalid SOAP envelope - The SOAP envelope send in the request
-            could not be parsed
-        115:
-          description: Invalid XML-RPC Method Call - The XML-RPC request document
-            could not be parsed
-        116:
-          description: Bad URL found - One or more arguments contained a URL that
-            has been used for abuse on Flickr
         200:
           description: OK
       tags:

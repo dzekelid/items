@@ -7,104 +7,236 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.j
 x-kinRank: "8"
 x-alexaRank: "2158"
 tags: Items
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Clarity Accounting Get Items
-  x-api-slug: clarity-accounting
+- name: Accounting - Get Items
+  x-api-slug: items-get
   description: Get items.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items
-  tags: Items
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/items-get-openapi.md
-- name: Clarity Accounting Post Items
-  x-api-slug: clarity-accounting
+- name: Accounting - Post Items
+  x-api-slug: items-post
   description: Post items.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items
-  tags: Items
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/items-post-openapi.md
-- name: Clarity Accounting Put Items
-  x-api-slug: clarity-accounting
+- name: Accounting - Put Items
+  x-api-slug: items-put
   description: Put items.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items
-  tags: Items
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/items-put-openapi.md
-- name: Clarity Accounting X-related-model Items
-  x-api-slug: clarity-accounting
+- name: Accounting - X-related-model Items
+  x-api-slug: items-xrelatedmodel
   description: X-related-model items.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items
-  tags: Items
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/items-xrelatedmodel-openapi.md
-- name: Clarity Accounting Delete Items
-  x-api-slug: clarity-accounting
+- name: Accounting - Delete Items
+  x-api-slug: itemsitemid-delete
   description: Delete items item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items/{ItemID}
-  tags: Items,ItemID
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-delete-openapi.md
-- name: Clarity Accounting Get Items
-  x-api-slug: clarity-accounting
+- name: Accounting - Get Items
+  x-api-slug: itemsitemid-get
   description: Get items item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items/{ItemID}
-  tags: Items,ItemID
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-get-openapi.md
-- name: Clarity Accounting Post Items
-  x-api-slug: clarity-accounting
+- name: Accounting - Post Items
+  x-api-slug: itemsitemid-post
   description: Post items item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items/{ItemID}
-  tags: Items,ItemID
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-post-openapi.md
-- name: Clarity Accounting X-related-model Items
-  x-api-slug: clarity-accounting
+- name: Accounting - X-related-model Items
+  x-api-slug: itemsitemid-xrelatedmodel
   description: X-related-model items item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
-  baseURL: https://api.xero.com//api.xro/2.0//Items/{ItemID}
-  tags: Items,ItemID
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-xrelatedmodel-openapi.md
-- name: Clarity Accounting
-  x-api-slug: clarity-accounting
-  description: Xero is the QuickBooks alternative. Use Xero accounting software to
-    manage invoicing, bank reconciliation, bookkeeping & more. Start a free trial
-    today!
+- name: Accounting - Delete Items
+  x-api-slug: itemsitemid-delete
+  description: Delete items item.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
   humanURL: http://www.xero.com/
   baseURL: https://api.xero.com//api.xro/2.0
-  tags: Items
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-delete-openapi.md
+- name: Accounting - Get Items
+  x-api-slug: itemsitemid-get
+  description: Get items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-get-openapi.md
+- name: Accounting - Post Items
+  x-api-slug: itemsitemid-post
+  description: Post items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-post-openapi.md
+- name: Accounting - X-related-model Items
+  x-api-slug: itemsitemid-xrelatedmodel
+  description: X-related-model items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-xrelatedmodel-openapi.md
+- name: Accounting - Delete Items
+  x-api-slug: itemsitemid-delete
+  description: Delete items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-delete-openapi.md
+- name: Accounting - Get Items
+  x-api-slug: itemsitemid-get
+  description: Get items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-get-openapi.md
+- name: Accounting - Post Items
+  x-api-slug: itemsitemid-post
+  description: Post items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-post-openapi.md
+- name: Accounting - X-related-model Items
+  x-api-slug: itemsitemid-xrelatedmodel
+  description: X-related-model items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-xrelatedmodel-openapi.md
+- name: Accounting - X-related-model Items
+  x-api-slug: itemsitemid-xrelatedmodel
+  description: X-related-model items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-xrelatedmodel-openapi.md
+- name: Accounting - Post Items
+  x-api-slug: itemsitemid-post
+  description: Post items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-post-openapi.md
+- name: Accounting - Get Items
+  x-api-slug: itemsitemid-get
+  description: Get items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-get-openapi.md
+- name: Accounting - Delete Items
+  x-api-slug: itemsitemid-delete
+  description: Delete items item.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/279-xero.jpg
+  humanURL: http://www.xero.com/
+  baseURL: https://api.xero.com//api.xro/2.0
+  tags: Finance, Accounting, Finance, Accounting, Stack Network, SaaS, Technology,
+    Invoices, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/xero/itemsitemid-delete-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://wordnik.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://xero.stack.network
 - type: x-base
   url: https://api.xero.com
 - type: x-blog

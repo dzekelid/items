@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Box
 x-complete: 0
 info:
-  title: "Box Get Folder\u2019s Items"
+  title: Box Get Folder???s Items
   description: Retrieves the files and/or folders contained within this folder without
     any other metadata about the folder. Any attribute in the full files or folders
     objects can be passed in with the fields parameter to get specific attributes,
@@ -23,7 +23,7 @@ consumes:
 paths:
   /folders/{FOLDER_ID}/items:
     get:
-      summary: "Get Folder\u2019s Items"
+      summary: Get Folder???s Items
       description: Retrieves the files and/or folders contained within this folder
         without any other metadata about the folder. Any attribute in the full files
         or folders objects can be passed in with the fields parameter to get specific

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: YouTube
 x-complete: 1
@@ -19,81 +18,20 @@ produces:
 consumes:
 - application/json
 paths:
-  /playlistItems:
-    delete:
-      summary: Delete Play List Items
-      description: Deletes a playlist item.
-      operationId: deletePlaylistitems
-      x-api-path-slug: playlistitems-delete
-      parameters:
-      - in: query
-        name: id
-        description: The id parameter specifies the YouTube playlist item ID for the
-          playlist item that is being deleted
-      - in: query
-        name: onBehalfOfContentOwner
-        description: 'Note: This parameter is intended exclusively for YouTube content
-          partners'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Playlistitems
-    get:
-      summary: Get Play List Items
-      description: Returns a collection of playlist items that match the API request
-        parameters. You can retrieve all of the playlist items in a specified playlist
-        or retrieve one or more playlist items by their unique IDs.
-      operationId: getPlaylistitems
-      x-api-path-slug: playlistitems-get
-      parameters:
-      - in: query
-        name: id
-        description: The id parameter specifies a comma-separated list of one or more
-          unique playlist item IDs
-      - in: query
-        name: maxResults
-        description: The maxResults parameter specifies the maximum number of items
-          that should be returned in the result set
-      - in: query
-        name: onBehalfOfContentOwner
-        description: 'Note: This parameter is intended exclusively for YouTube content
-          partners'
-      - in: query
-        name: pageToken
-        description: The pageToken parameter identifies a specific page in the result
-          set that should be returned
-      - in: query
-        name: part
-        description: The part parameter specifies a comma-separated list of one or
-          more playlistItem resource properties that the API response will include
-      - in: query
-        name: playlistId
-        description: The playlistId parameter specifies the unique ID of the playlist
-          for which you want to retrieve playlist items
-      - in: query
-        name: videoId
-        description: The videoId parameter specifies that the request should return
-          only the playlist items that contain the specified video
-      responses:
-        200:
-          description: OK
-      tags:
-      - Playlistitems
+  /activities:
     post:
-      summary: Add Play List Items
-      description: Adds a resource to a playlist.
-      operationId: postPlaylistitems
-      x-api-path-slug: playlistitems-post
+      summary: Add Activities
+      description: |-
+        Posts a bulletin for a specific channel. (The user submitting the request must be authorized to act on the channel's behalf.)
+
+        Note: Even though an activity resource can contain information about actions like a user rating a video or marking a video as a favorite, you need to use other API methods to generate those activity resources. For example, you would use the API's videos.rate() method to rate a video and the playlistItems.insert() method to mark a video as a favorite.
+      operationId: postActivities
+      x-api-path-slug: activities-post
       parameters:
       - in: body
         name: body
         schema:
           $ref: '#/definitions/holder'
-      - in: query
-        name: onBehalfOfContentOwner
-        description: 'Note: This parameter is intended exclusively for YouTube content
-          partners'
       - in: query
         name: part
         description: The part parameter serves two purposes in this operation
@@ -101,87 +39,4 @@ paths:
         200:
           description: OK
       tags:
-      - Playlistitems
-    put:
-      summary: Put Play List Items
-      description: Modifies a playlist item. For example, you could update the item's
-        position in the playlist.
-      operationId: putPlaylistitems
-      x-api-path-slug: playlistitems-put
-      parameters:
-      - in: body
-        name: body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: query
-        name: onBehalfOfContentOwner
-        description: 'Note: This parameter is intended exclusively for YouTube content
-          partners'
-      - in: query
-        name: part
-        description: The part parameter serves two purposes in this operation
-      responses:
-        200:
-          description: OK
-      tags:
-      - Playlistitems
-  /groupItems:
-    delete:
-      summary: Delete Groupitems
-      description: Removes an item from a group.
-      operationId: deleteGroupitems
-      x-api-path-slug: groupitems-delete
-      parameters:
-      - in: query
-        name: id
-        description: The id parameter specifies the YouTube group item ID for the
-          group that is being deleted
-      - in: query
-        name: onBehalfOfContentOwner
-        description: 'Note: This parameter is intended exclusively for YouTube content
-          partners'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Groupitems
-    get:
-      summary: Get Groupitems
-      description: Returns a collection of group items that match the API request
-        parameters.
-      operationId: getGroupitems
-      x-api-path-slug: groupitems-get
-      parameters:
-      - in: query
-        name: groupId
-        description: The id parameter specifies the unique ID of the group for which
-          you want to retrieve group items
-      - in: query
-        name: onBehalfOfContentOwner
-        description: 'Note: This parameter is intended exclusively for YouTube content
-          partners'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Groupitems
-    post:
-      summary: Add Groupitems
-      description: Creates a group item.
-      operationId: postGroupitems
-      x-api-path-slug: groupitems-post
-      parameters:
-      - in: body
-        name: body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: query
-        name: onBehalfOfContentOwner
-        description: 'Note: This parameter is intended exclusively for YouTube content
-          partners'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Groupitems
----
+      - Activities

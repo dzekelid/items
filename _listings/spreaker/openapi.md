@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Spreaker
 x-complete: 1
@@ -34,7 +33,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Explore
       - Category
       - Items
----

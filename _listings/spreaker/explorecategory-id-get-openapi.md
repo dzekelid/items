@@ -36,6 +36,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Explore
       - Category
       - Items

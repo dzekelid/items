@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Reverb
 x-complete: 1
@@ -38,4 +37,24 @@ paths:
       - Id
       - Line
       - Items
----
+  /cart/move_to_watch_list/{cart_item_id}:
+    post:
+      summary: Post Cart Move To Watch List Cart Item
+      description: Remove a cart item and add it to watch list
+      operationId: postCartMoveToWatchListCartItem
+      x-api-path-slug: cartmove-to-watch-listcart-item-id-post
+      parameters:
+      - in: path
+        name: cart_item_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Cart
+      - Move
+      - To
+      - Watch
+      - List
+      - Cart
+      - Item
+      - Id

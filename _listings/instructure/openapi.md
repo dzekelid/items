@@ -1,9 +1,8 @@
----
 swagger: "2.0"
 x-collection-name: Instructure
 x-complete: 1
 info:
-  title: Instructure Canvas Courses API
+  title: Instructure Canvas Utility APIs
   description: canvas-lms-includes-a-rest-api-for-accessing-and-modifying-data-externally-from-the-main-application-in-your-own-programs-and-scripts--
   termsOfService: https://www.canvaslms.com/policies/api-policy
   version: v1
@@ -226,4 +225,26 @@ paths:
       - Id
       - Mark
       - Read
----
+  /courses/{course_id}/module_item_sequence:
+    get:
+      summary: Get module item sequence
+      description: Get module item sequence.
+      operationId: get-module-item-sequence
+      x-api-path-slug: coursescourse-idmodule-item-sequence-get
+      parameters:
+      - in: query
+        name: asset_id
+        description: The id of the asset (or the url in the case of a Page)
+      - in: query
+        name: asset_type
+        description: The type of asset to find module sequence information for
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Module
+      - Item
+      - Sequence

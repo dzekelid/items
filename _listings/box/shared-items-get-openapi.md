@@ -4,15 +4,9 @@ x-collection-name: Box
 x-complete: 0
 info:
   title: Box Shared Items
-  description: "Shared items are any files or folders that are represented by a shared
-    link. Shared items are different from other API resources in that a shared resource
-    doesn\u2019t necessarily have to be in the account of the user accessing it. The
-    actual shared link itself is used along with a normal access token.\nUsed to retrieve
-    the metadata about a shared item when only given a shared link. Because of varying
-    permission for shared links, a password may be required to retrieve the shared
-    item. Once the item has been retrieved, you can make API requests against the
-    actual resource /files/{id} or /folders/{id} as long as the shared link and optional
-    password are in the header."
+  description: |-
+    Shared items are any files or folders that are represented by a shared link. Shared items are different from other API resources in that a shared resource doesn???t necessarily have to be in the account of the user accessing it. The actual shared link itself is used along with a normal access token.
+    Used to retrieve the metadata about a shared item when only given a shared link. Because of varying permission for shared links, a password may be required to retrieve the shared item. Once the item has been retrieved, you can make API requests against the actual resource /files/{id} or /folders/{id} as long as the shared link and optional password are in the header.
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
@@ -25,7 +19,7 @@ consumes:
 paths:
   /folders/{FOLDER_ID}/items:
     get:
-      summary: "Get Folder\u2019s Items"
+      summary: Get Folder???s Items
       description: Retrieves the files and/or folders contained within this folder
         without any other metadata about the folder. Any attribute in the full files
         or folders objects can be passed in with the fields parameter to get specific
@@ -88,15 +82,9 @@ paths:
   /shared_items:
     get:
       summary: Shared Items
-      description: "Shared items are any files or folders that are represented by
-        a shared link. Shared items are different from other API resources in that
-        a shared resource doesn\u2019t necessarily have to be in the account of the
-        user accessing it. The actual shared link itself is used along with a normal
-        access token.\nUsed to retrieve the metadata about a shared item when only
-        given a shared link. Because of varying permission for shared links, a password
-        may be required to retrieve the shared item. Once the item has been retrieved,
-        you can make API requests against the actual resource /files/{id} or /folders/{id}
-        as long as the shared link and optional password are in the header."
+      description: |-
+        Shared items are any files or folders that are represented by a shared link. Shared items are different from other API resources in that a shared resource doesn???t necessarily have to be in the account of the user accessing it. The actual shared link itself is used along with a normal access token.
+        Used to retrieve the metadata about a shared item when only given a shared link. Because of varying permission for shared links, a password may be required to retrieve the shared item. Once the item has been retrieved, you can make API requests against the actual resource /files/{id} or /folders/{id} as long as the shared link and optional password are in the header.
       operationId: getSharedItems
       x-api-path-slug: shared-items-get
       parameters:

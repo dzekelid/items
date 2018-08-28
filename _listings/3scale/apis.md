@@ -5,37 +5,44 @@ description: 3scales API Management platform gives you the tools you need to tak
   control of your API. Trusted by more customers than any other vendor.
 image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/4-3scale.jpg
 x-kinRank: "10"
-x-alexaRank: "345437"
+x-alexaRank: "333433"
 tags: Items
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/3scale/apis.md
 specificationVersion: "0.14"
 apis:
-- name: 3Scale Billing API Invoice Line Items List
-  x-api-slug: 3scale-billing-api
+- name: 3Scale Billing API - Invoice Line Items List
+  x-api-slug: apiinvoicesinvoice-idline-items-xml-get
   description: Invoice line items list.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/4-3scale.jpg
   humanURL: http://3scale.net
-  baseURL: https://su1.3scale.net////api/invoices/{invoice_id}/line_items.xml
-  tags: Invoice,Line,Items,List
+  baseURL: https://su1.3scale.net//
+  tags: Management, Management, My API Stack, Imports, Stack Network, SaaS, Technology,
+    Enterprise, API Service Provider, Profiles, Portals
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/3scale/apiinvoicesinvoice-idline-items-xml-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/3scale/apiinvoicesinvoice-idline-items-xml-get-openapi.md
-- name: 3Scale Billing API
-  x-api-slug: 3scale-billing-api
-  description: 3scales API Management platform gives you the tools you need to take
-    control of your API. Trusted by more customers than any other vendor.
+- name: 3Scale Billing API - Invoice Line Items List
+  x-api-slug: apiinvoicesinvoice-idline-items-xml-get
+  description: Invoice line items list.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/4-3scale.jpg
   humanURL: http://3scale.net
   baseURL: https://su1.3scale.net//
-  tags: Items
+  tags: Management, Management, My API Stack, Imports, Stack Network, SaaS, Technology,
+    Enterprise, API Service Provider, Profiles, Portals
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/3scale/apiinvoicesinvoice-idline-items-xml-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/3scale/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/items/master/_listings/3scale/apiinvoicesinvoice-idline-items-xml-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://3scale.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://3scale.stack.network
 - type: x-blog
   url: http://www.3scale.net/blog/
 - type: x-blog-rss
@@ -67,7 +74,11 @@ x-common:
 - type: x-website
   url: http://
 - type: x-website
+  url: http://http
+- type: x-website
   url: http://www.3scale.net
+- type: x-website
+  url: ://
 include: []
 maintainers:
 - FN: Kin Lane
